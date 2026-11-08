@@ -1,0 +1,29 @@
+digraph CU {
+  rankdir=LR; fontname="Helvetica"; nodesep=0.45; ranksep=1.1;
+  node [fontname="Helvetica", fontsize=11];
+  edge [fontname="Helvetica", fontsize=9];
+  op  [label="Operador\nde Pañol", shape=box, style="rounded,filled", fillcolor="#DCE6FF", color="#1B4DB3"];
+  emp [label="Empleado\n(legajo)", shape=box, style="rounded,filled", fillcolor="#C4F0E8", color="#00695C"];
+  st  [label="Servicio\nTécnico", shape=box, style="rounded,filled", fillcolor="#FFE2B8", color="#B26A00"];
+  subgraph cluster_sys {
+    label="Sistema móvil Pañol-App (APK Android)"; style="rounded"; color="#7A8294"; fontsize=12;
+    node [shape=ellipse, style=filled, fillcolor="white", color="#1B4DB3"];
+    cu1 [label="CU-01\nRegistrar alta de tablet\n(genera el QR)"];
+    cu2 [label="CU-02\nDespachar tablet"];
+    cu3 [label="CU-03\nRecibir devolución"];
+    cu4 [label="CU-04\nEnviar / reingresar\nservicio técnico"];
+    cu5 [label="CU-05\nConsultar ficha\ne inventario"];
+    esc [label="Escanear QR", fillcolor="#F1F4FA"];
+    man [label="Ingresar serie\npor teclado", fillcolor="#F1F4FA"];
+    hom [label="Validar tarea\nde Home Office", fillcolor="#FFE2B8"];
+  }
+  op -> cu1; op -> cu2; op -> cu3; op -> cu4; op -> cu5;
+  cu2 -> emp [dir=none, style=dashed, label="retira"];
+  cu3 -> emp [dir=none, style=dashed, label="devuelve"];
+  cu4 -> st  [dir=none, style=dashed];
+  cu2 -> esc [style=dashed, label="«include»"];
+  cu3 -> esc [style=dashed, label="«include»"];
+  cu5 -> esc [style=dashed, label="«include»"];
+  man -> esc [style=dashed, label="«extend»\nQR dañado / sin cámara", arrowhead=open];
+  hom -> cu2 [style=dashed, label="«extend»\nuso = Home Office", arrowhead=open];
+}

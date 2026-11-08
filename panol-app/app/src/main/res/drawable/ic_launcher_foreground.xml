@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Tablet -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M36,26 L72,26 A5,5 0 0 1 77,31 L77,77 A5,5 0 0 1 72,82 L36,82 A5,5 0 0 1 31,77 L31,31 A5,5 0 0 1 36,26 Z" />
+    <!-- Esquinas tipo QR -->
+    <path
+        android:fillColor="#FF1B4DB3"
+        android:pathData="M37,32 L49,32 L49,44 L37,44 Z M59,32 L71,32 L71,44 L59,44 Z M37,54 L49,54 L49,66 L37,66 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M40,35 L46,35 L46,41 L40,41 Z M62,35 L68,35 L68,41 L62,41 Z M40,57 L46,57 L46,63 L40,63 Z" />
+    <path
+        android:fillColor="#FF00695C"
+        android:pathData="M59,54 L65,54 L65,60 L59,60 Z M66,61 L72,61 L72,67 L66,67 Z M59,68 L65,68 L65,74 L59,74 Z M52,68 L56,68 L56,72 L52,72 Z" />
+    <!-- Botón home -->
+    <path
+        android:fillColor="#FF1B4DB3"
+        android:pathData="M54,76.5 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" />
+</vector>

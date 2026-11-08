@@ -1,0 +1,19 @@
+digraph E {
+  rankdir=LR; fontname="Helvetica"; nodesep=0.7; ranksep=1.3;
+  node [fontname="Helvetica", fontsize=12, shape=box, style="rounded,filled", penwidth=1.5];
+  edge [fontname="Helvetica", fontsize=10];
+  ini [shape=circle, label="", style=filled, fillcolor=black, width=0.2];
+  pan [label="En Pañol\n(disponible)", fillcolor="#DDF3E6", color="#1B7F4B"];
+  loc [label="En Uso Local\n(oficina)", fillcolor="#DCE6FF", color="#1B4DB3"];
+  ext [label="En Uso Externo\n(Home Office)", fillcolor="#EBDDFF", color="#6B3FB8"];
+  srv [label="En Servicio Técnico\n(fuera de circulación)", fillcolor="#FFDAD6", color="#B3261E"];
+  ini -> pan [label="CU-01 alta"];
+  pan -> loc [label="CU-02\nuso = oficina"];
+  pan -> ext [label="CU-02\nuso = Home Office\n+ tarea asignada"];
+  loc -> pan [label="CU-03\nsin daños"];
+  ext -> pan [label="CU-03\nsin daños"];
+  loc -> srv [label="CU-03\ncon daños"];
+  ext -> srv [label="CU-03\ncon daños"];
+  pan -> srv [label="CU-04\nrotura / actualización"];
+  srv -> pan [label="CU-04\nreingreso"];
+}

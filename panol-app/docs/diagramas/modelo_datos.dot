@@ -1,0 +1,28 @@
+digraph ER {
+  rankdir=LR; fontname="Helvetica"; nodesep=0.6; ranksep=1.4;
+  node [shape=plaintext, fontname="Helvetica", fontsize=11];
+  edge [fontname="Helvetica", fontsize=10];
+  empleados [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="5" bgcolor="#F9FAFE">
+    <tr><td bgcolor="#C4F0E8" colspan="2"><b>empleados</b></td></tr>
+    <tr><td align="left"><u>legajo</u></td><td align="left">TEXT  PK</td></tr>
+    <tr><td align="left">nombre</td><td align="left">TEXT  NOT NULL</td></tr></table>>];
+  tablets [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="5" bgcolor="#F9FAFE">
+    <tr><td bgcolor="#DCE6FF" colspan="2"><b>tablets</b></td></tr>
+    <tr><td align="left"><u>serie</u></td><td align="left">TEXT  PK</td></tr>
+    <tr><td align="left">procesador, ram,<br align="left"/>almacenamiento, pantalla</td><td align="left">TEXT  NOT NULL</td></tr>
+    <tr><td align="left">puertos, conectividad</td><td align="left">TEXT (arreglo JSON)</td></tr>
+    <tr><td align="left">estado</td><td align="left">TEXT  (4 valores)</td></tr>
+    <tr><td align="left">legajo_actual</td><td align="left">TEXT  FK, nulo</td></tr>
+    <tr><td align="left">tarea_actual</td><td align="left">TEXT  nulo</td></tr>
+    <tr><td align="left">estado_desde, creado_en</td><td align="left">INTEGER (epoch ms)</td></tr></table>>];
+  movimientos [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="5" bgcolor="#F9FAFE">
+    <tr><td bgcolor="#FFE2B8" colspan="2"><b>movimientos</b></td></tr>
+    <tr><td align="left"><u>id</u></td><td align="left">INTEGER  PK autoinc.</td></tr>
+    <tr><td align="left">serie</td><td align="left">TEXT  FK</td></tr>
+    <tr><td align="left">tipo</td><td align="left">TEXT  (6 valores)</td></tr>
+    <tr><td align="left">estado_origen / destino</td><td align="left">TEXT</td></tr>
+    <tr><td align="left">legajo, tarea, observaciones</td><td align="left">TEXT  nulos</td></tr>
+    <tr><td align="left">fecha</td><td align="left">INTEGER (epoch ms)</td></tr></table>>];
+  empleados -> tablets [label="0..1 : N\n(quién la tiene hoy)", arrowhead=crow, dir=both, arrowtail=teeodot];
+  tablets -> movimientos [label="1 : N\n(bitácora)", arrowhead=crow];
+}

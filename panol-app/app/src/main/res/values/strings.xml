@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pañol-App</string>
+
+    <!-- Comunes -->
+    <string name="volver">Volver</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="no_informado">No informado</string>
+
+    <!-- Estados -->
+    <string name="estado_en_panol">En Pañol</string>
+    <string name="estado_uso_local">Uso local</string>
+    <string name="estado_uso_externo">Home Office</string>
+    <string name="estado_servicio_tecnico">Servicio técnico</string>
+
+    <!-- Inicio -->
+    <string name="inicio_subtitulo">Trazabilidad de tablets · %1$d registradas</string>
+    <string name="inicio_estado_flota">Estado de la flota</string>
+    <string name="inicio_acciones">¿Qué querés hacer?</string>
+    <string name="accion_escanear">Escanear QR</string>
+    <string name="accion_despachar">Despachar</string>
+    <string name="accion_devolver">Devolver</string>
+    <string name="accion_alta">Alta</string>
+    <string name="accion_inventario">Inventario</string>
+
+    <!-- Escáner -->
+    <string name="escaner_titulo_consulta">Apuntá al QR de la tablet</string>
+    <string name="escaner_titulo_despacho">Escaneá la tablet a despachar</string>
+    <string name="escaner_titulo_devolucion">Escaneá la tablet que se devuelve</string>
+    <string name="escaner_ayuda">Tocá la imagen para enfocar. Si el QR está dañado, ingresá la serie a mano.</string>
+    <string name="escaner_ingreso_manual">Ingresar serie con el teclado</string>
+    <string name="escaner_linterna">Linterna</string>
+    <string name="escaner_no_leido">No pudimos usar ese código</string>
+    <string name="escaner_reintentar">Escanear de nuevo</string>
+    <string name="permiso_titulo">Necesitamos la cámara</string>
+    <string name="permiso_texto">La cámara se usa solo para leer el QR de las tablets. Nada se envía a internet.</string>
+    <string name="permiso_conceder">Permitir cámara</string>
+    <string name="permiso_ajustes">Abrir ajustes</string>
+    <string name="sin_camara_titulo">Este dispositivo no tiene cámara</string>
+    <string name="sin_camara_texto">Podés seguir trabajando ingresando el número de serie con el teclado.</string>
+    <string name="manual_titulo">Ingreso manual</string>
+    <string name="manual_texto">Escribí el número de serie impreso en la etiqueta de la tablet.</string>
+    <string name="manual_buscar">Buscar</string>
+
+    <!-- Errores del QR -->
+    <string name="qr_err_vacio">El código está vacío.</string>
+    <string name="qr_err_formato">No parece un QR de Pañol-App. Probá con la etiqueta pegada en el reverso de la tablet.</string>
+    <string name="qr_err_sin_serie">El QR no trae número de serie.</string>
+    <string name="qr_err_serie_invalida">El número de serie del QR no es válido.</string>
+    <string name="qr_err_lectura">No se pudo leer. Revisá la cámara o ingresá la serie a mano.</string>
+
+    <!-- Ficha -->
+    <string name="ficha_titulo">Ficha técnica</string>
+    <string name="ficha_desde">Desde %1$s</string>
+    <string name="ficha_asignacion">Asignación actual</string>
+    <string name="ficha_aviso_externa">Esta tablet está fuera de la empresa, vinculada a la tarea indicada.</string>
+    <string name="ficha_specs">Especificaciones técnicas</string>
+    <string name="ficha_conectividad_puertos">Conectividad y puertos</string>
+    <string name="ficha_puertos">Puertos</string>
+    <string name="ficha_conectividad">Conectividad</string>
+    <string name="ficha_historial">Historial</string>
+    <string name="ficha_historial_vacio">Todavía no hay movimientos.</string>
+    <string name="ficha_no_encontrada_texto">Volvé al inicio y escaneá otra tablet.</string>
+    <string name="spec_procesador">Procesador</string>
+    <string name="spec_ram">Memoria RAM</string>
+    <string name="spec_almacenamiento">Almacenamiento</string>
+    <string name="spec_pantalla">Pantalla</string>
+    <string name="asig_legajo">Legajo</string>
+    <string name="asig_empleado">Empleado</string>
+    <string name="asig_uso">Tipo de uso</string>
+    <string name="asig_tarea">Tarea</string>
+    <string name="asig_desde">Retirada</string>
+    <string name="accion_despachar_tablet">Despachar tablet</string>
+    <string name="accion_registrar_devolucion">Registrar devolución</string>
+    <string name="accion_enviar_servicio">Enviar a servicio técnico</string>
+    <string name="accion_reingresar">Reingresar al pañol</string>
+    <string name="accion_ver_qr">Ver código QR</string>
+    <string name="dlg_servicio_titulo">Enviar a servicio técnico</string>
+    <string name="dlg_servicio_motivo">Motivo (rotura, actualización…)</string>
+    <string name="dlg_servicio_confirmar">Enviar</string>
+    <string name="dlg_reingreso_titulo">Reingresar al pañol</string>
+    <string name="dlg_reingreso_obs">Observaciones (opcional)</string>
+    <string name="dlg_reingreso_confirmar">Reingresar</string>
+
+    <!-- Movimientos -->
+    <string name="mov_alta">Alta en el pañol</string>
+    <string name="mov_despacho_local">Despacho · uso local</string>
+    <string name="mov_despacho_externo">Despacho · Home Office</string>
+    <string name="mov_devolucion">Devolución</string>
+    <string name="mov_envio_servicio">Envío a servicio técnico</string>
+    <string name="mov_reingreso_servicio">Reingreso desde servicio técnico</string>
+    <string name="mov_empleado">Legajo %1$s · %2$s</string>
+    <string name="mov_tarea">Tarea: %1$s</string>
+    <string name="mov_obs">Obs.: %1$s</string>
+
+    <!-- Despacho (CU-02) -->
+    <string name="despacho_titulo">Despachar tablet</string>
+    <string name="despacho_tipo_uso">¿Dónde se va a usar?</string>
+    <string name="despacho_empleado">Empleado</string>
+    <string name="despacho_tarea_seccion">Tarea asociada</string>
+    <string name="despacho_confirmar">Confirmar despacho</string>
+    <string name="despacho_no_disponible_texto">Solo se pueden despachar tablets que están en el pañol.</string>
+    <string name="uso_oficina">Uso local (oficina)</string>
+    <string name="uso_oficina_desc">Se usa dentro de la empresa y se devuelve al terminar la jornada.</string>
+    <string name="uso_home_office">Home Office</string>
+    <string name="uso_home_office_desc">Se la lleva a su casa, vinculada a una tarea asignada.</string>
+    <string name="campo_legajo">Legajo</string>
+    <string name="campo_nombre">Nombre y apellido</string>
+    <string name="campo_tarea_obligatoria">Tarea asignada (obligatoria)</string>
+    <string name="campo_tarea_opcional">Tarea asociada (opcional)</string>
+    <string name="alerta_home_titulo">Home Office sin tarea asignada</string>
+    <string name="alerta_home_texto">Para llevarse la tablet a casa hace falta una tarea que lo justifique (mínimo %1$d caracteres).</string>
+    <string name="alerta_home_dialogo">No se puede despachar para Home Office sin una tarea asignada que lo justifique (mínimo %1$d caracteres). Cargá la tarea o cambiá el uso a oficina.</string>
+    <string name="alerta_home_asignar">Cargar tarea</string>
+    <string name="alerta_home_cambiar">Usar en oficina</string>
+
+    <!-- Devolución (CU-03) -->
+    <string name="devolucion_titulo">Recibir devolución</string>
+    <string name="devolucion_quien">Quién la tenía</string>
+    <string name="devolucion_estado_fisico">Estado físico del equipo</string>
+    <string name="devolucion_no_en_uso_texto">Esta tablet no figura como retirada, así que no hay nada para devolver.</string>
+    <string name="fisico_ok">Sin daños</string>
+    <string name="fisico_ok_desc">Pantalla, carcasa y puertos en buen estado.</string>
+    <string name="fisico_danos">Con daños</string>
+    <string name="fisico_danos_desc">Rotura, falla o faltantes. Pasa a servicio técnico.</string>
+    <string name="campo_obs_obligatoria">Describí el daño (obligatorio)</string>
+    <string name="campo_obs_opcional">Observaciones (opcional)</string>
+    <string name="devolucion_resultado_ok">La tablet vuelve al pañol y queda disponible.</string>
+    <string name="devolucion_resultado_servicio">La tablet sale de circulación y pasa a servicio técnico.</string>
+    <string name="devolucion_confirmar">Confirmar devolución</string>
+    <string name="devolucion_confirmar_servicio">Confirmar y enviar a servicio</string>
+
+    <!-- Alta (CU-01) -->
+    <string name="alta_titulo">Alta de tablet</string>
+    <string name="alta_no_registrada">Tablet no registrada</string>
+    <string name="alta_desde_qr_completo">Cargamos los datos del QR. Revisalos y guardá para darla de alta.</string>
+    <string name="alta_desde_qr_parcial">El código solo trae la serie. Completá la ficha técnica para darla de alta.</string>
+    <string name="alta_identificacion">Identificación</string>
+    <string name="campo_serie">Número de serie</string>
+    <string name="alta_serie_ayuda">Letras, números, guiones y puntos (3 a 40 caracteres).</string>
+    <string name="alta_ejemplo_ram">Ej.: 4 GB</string>
+    <string name="alta_ejemplo_almacenamiento">Ej.: 64 GB</string>
+    <string name="alta_ejemplo_pantalla">Ej.: 10.1 pulgadas</string>
+    <string name="alta_otros_puertos">Otros puertos (separados por coma)</string>
+    <string name="alta_otras_conexiones">Otras conexiones (separadas por coma)</string>
+    <string name="alta_guardar">Guardar y generar QR</string>
+
+    <!-- QR (CU-01) -->
+    <string name="qr_titulo">Etiqueta QR</string>
+    <string name="qr_registrada_titulo">Tablet registrada en el pañol</string>
+    <string name="qr_registrada_texto">Imprimí o compartí esta etiqueta y pegala en el reverso de la tablet.</string>
+    <string name="qr_descripcion">Código QR de la tablet %1$s</string>
+    <string name="qr_compartir">Compartir / imprimir</string>
+    <string name="qr_ir_ficha">Ir a la ficha</string>
+    <string name="qr_contenido">Contenido codificado</string>
+    <string name="qr_error_generar">No se pudo generar o compartir el QR.</string>
+
+    <!-- Inventario -->
+    <string name="inventario_titulo">Inventario</string>
+    <string name="inventario_buscar">Buscar por serie, legajo o nombre</string>
+    <string name="inventario_todas">Todas</string>
+    <string name="inventario_vacio_titulo">Sin resultados</string>
+    <string name="inventario_vacio_texto">No hay tablets que coincidan con el filtro.</string>
+
+    <!-- Mensajes -->
+    <string name="msg_alta_ok">Tablet %1$s registrada</string>
+    <string name="msg_despacho_ok">Tablet %1$s despachada</string>
+    <string name="msg_devolucion_ok">Tablet %1$s devuelta al pañol</string>
+    <string name="msg_devolucion_servicio">Tablet %1$s enviada a servicio técnico</string>
+    <string name="msg_envio_servicio_ok">Tablet %1$s enviada a servicio técnico</string>
+    <string name="msg_reingreso_ok">Tablet %1$s reingresada al pañol</string>
+
+    <!-- Errores de negocio -->
+    <string name="err_campo_obligatorio">Campo obligatorio</string>
+    <string name="err_serie_invalida">Serie no válida. Usá letras, números, guiones o puntos (3 a 40).</string>
+    <string name="err_serie_duplicada">Ya existe una tablet con esa serie.</string>
+    <string name="err_specs_incompletas">Completá procesador, RAM, almacenamiento y pantalla.</string>
+    <string name="err_tablet_no_encontrada">Tablet no encontrada</string>
+    <string name="err_tablet_no_disponible">La tablet no está disponible</string>
+    <string name="err_tablet_no_en_uso">La tablet no está en uso</string>
+    <string name="err_legajo_invalido">Legajo no válido (letras o números, hasta 10).</string>
+    <string name="err_nombre_invalido">Ingresá el nombre del empleado.</string>
+    <string name="err_home_office_sin_tarea">Home Office requiere una tarea asignada.</string>
+    <string name="err_danos_sin_observacion">Describí el daño para enviarla a servicio técnico.</string>
+    <string name="err_motivo_requerido">Indicá el motivo.</string>
+    <string name="err_transicion_invalida">Ese cambio de estado no está permitido.</string>
+    <string name="err_interno">Ocurrió un error al guardar. Probá de nuevo.</string>
+</resources>
